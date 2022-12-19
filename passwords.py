@@ -21,7 +21,7 @@ def openLogin():
 
     # get the password for login
     ttk.Label(loginWindow, text="Password").grid(column=0, row=1, sticky=W, pady=5, padx=5)
-    ttk.Entry(loginWindow, textvariable=password).grid(column=1, row=1, padx=5)
+    ttk.Entry(loginWindow, textvariable=password, show="*").grid(column=1, row=1, padx=5)
             
     # when "login" button clicked, check to see if we have that login info in .csv file
     def log():
