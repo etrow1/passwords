@@ -27,6 +27,7 @@ def openLogin():
     def log():
         with open("pswds.csv", mode="r") as f:
             reader = csv.reader(f, delimiter=",")
+            next(reader)
             for col in reader:
                 if col == [username.get(),password.get()]:
                     messagebox.showinfo(title="Login Successful", message="You have successfully logged in!")
